@@ -9,7 +9,7 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 ## TODO
 - [ ] Add SQL-queries for averages
 - [ ] Real-time graphing
-- [ ] Quote of the day
+- [ ] Quote of the Day
 - [ ] HTML/CSS - make it pretty
 - [ ] Services for flask and sensor
 - [ ] Handle unexpected shutdown
