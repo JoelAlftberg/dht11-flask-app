@@ -7,7 +7,7 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - DHT11 Adafruit Module
 
 ##TODO:
-- [ ] Add SQL-queries for Average last 4 hours / today / this month / this year
-- [ ] Real-time graphing (https://www.chartjs.org/ maybe)
+- [ ] Add SQL-queries for averages
+- [ ] Real-time graphing
 - [ ] Quote of the day
 - [ ] HTML/CSS - make it pretty
