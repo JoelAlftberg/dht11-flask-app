@@ -6,7 +6,7 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - Raspberry Pi Zero 
 - DHT11 Adafruit Module
 
-## TODO:
+## TODO
 - [ ] Add SQL-queries for averages
 - [ ] Real-time graphing
 - [ ] Quote of the day
