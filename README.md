@@ -11,3 +11,5 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - [ ] Real-time graphing
 - [ ] Quote of the day
 - [ ] HTML/CSS - make it pretty
+- [ ] Services for flask and sensor
+- [ ] Handle unexpected shutdown
