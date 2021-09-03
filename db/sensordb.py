@@ -1,15 +1,19 @@
-import psycopg2
-from datetime import datetime
-
-connection = psycopg2.connect(user='pi',password='teampurple', host='127.0.0.1', port='5432', database='sensordb')
-
-cursor = connection.cursor()
-
-def average_7days():
-
-    cursor.execute(f"SELECT avg(celsius) FROM temperature WHERE date BETWEEN (SELECT NOW()  - interval '7 days') AND NOW()")
-    result = cursor.fetchone()
+def sql_average(column, interval):
     
+    cursor.execute(f"SELECT avg({column}) FROM temperature WHERE date BETWEEN (SELECT NOW() - interval '{interval}') AND NOW()")
+    result = cursor.fetchone()
+
     return result
 
-print(average_7days())
+def sql_current(column):
+
+    cursor.execute(f"SELECT {column} FROM temperature WHERE date = NOW()")
+    result = cursor.fetchone()
+
+    return result
+
+
+### EXAMPLE FUNCTION CALL ###
+
+#print(sql_average('celsius', '7 days'))
+

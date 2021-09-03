@@ -7,7 +7,9 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - DHT11 Adafruit Module
 
 ## TODO
-- [ ] Add SQL-queries for averages
+- [X] Add SQL-queries for averages
 - [ ] Real-time graphing
 - [ ] Quote of the day
 - [ ] HTML/CSS - make it pretty
+- [X] Systemd service for sensor
+- [ ] Handle what happens on power-off
