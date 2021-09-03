@@ -11,10 +11,9 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - [ ] Real-time graphing
 - [ ] Quote of the Day
 - [ ] HTML/CSS - make it pretty
-<<<<<<< HEAD
-- [X] Systemd service for sensor
-- [ ] Handle what happens on power-off
-=======
+
+## WIP
 - [ ] Services for flask and sensor
 - [ ] Handle unexpected shutdown
->>>>>>> 1cc7b7e37a9952d44259d5b7e1f2a04b5c901e84
+- [ ] Display values on dashboard
+
