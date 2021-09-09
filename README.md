@@ -19,6 +19,6 @@ The psql_refresh.sh script is meant to be put in crontab and run on an hourly ba
 ## WIP
 - [ ] Services for flask and sensor
 - [ ] Handle unexpected shutdown
-- [ ] Display celsius values on dashboard
+- [X] Display celsius values on dashboard
 - [ ] Display humidity values on dashboard
 
