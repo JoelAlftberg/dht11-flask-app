@@ -6,15 +6,19 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - Raspberry Pi Zero 
 - DHT11 Adafruit Module
 
+## Setup
+The script in db/install.sh installs the postgres database, as of now it does not set up the views that I'm usingto generate the daily/weekly/monthly values.\
+The psql_refresh.sh script is meant to be put in crontab and run on an hourly basis or so.
+
 ## TODO
 - [X] Add SQL-queries for averages
 - [ ] Real-time graphing
 - [ ] Quote of the Day
 - [ ] HTML/CSS - make it pretty
-- [ ] Look into using Turbo Flask 
 
 ## WIP
 - [ ] Services for flask and sensor
 - [ ] Handle unexpected shutdown
-- [ ] Display values on dashboard
+- [ ] Display celsius values on dashboard
+- [ ] Display humidity values on dashboard
 

@@ -8,7 +8,6 @@ def sql_average(column, interval):
     
     cursor.execute(f"SELECT avg({column}) FROM temperature WHERE date BETWEEN (SELECT NOW() - interval '{interval}') AND NOW()")
     result = cursor.fetchone()
-    print(result)
     return result
 
 def sql_current(column):
@@ -18,6 +17,13 @@ def sql_current(column):
 
     return result
 
+def sql_select_view(table):
+
+    cursor.execute(f"SELECT * FROM {table} LIMIT 1")
+
+    result = cursor.fetchone()
+
+    return result
 
 ### EXAMPLE FUNCTION CALL ###
 
