@@ -7,7 +7,13 @@ Built using Flask for the front-end and running Python and Postgres in the backe
 - DHT11 Adafruit Module
 
 ## Setup
-The script in db/install.sh installs the postgres database, as of now it does not set up the views that I'm usingto generate the daily/weekly/monthly values.\
+The script in db/install.sh installs the postgres database, as of now it does not set up the views that I'm using to generate the daily, weekly and monthly values.
+The views can be created like this in psql:
+```
+CREATE MATERIALIZED VIEW celsius_daily_average AS
+SELECT avg(celsius) FROM temperature
+WHERE date BETWEEN (SELECT NOW() - interval '1 day') AND NOW()
+```
 The psql_refresh.sh script is meant to be put in crontab and run on an hourly basis or so.
 
 ## TODO
