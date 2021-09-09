@@ -14,7 +14,9 @@ CREATE MATERIALIZED VIEW celsius_daily_average AS
 SELECT avg(celsius) FROM temperature
 WHERE date BETWEEN (SELECT NOW() - interval '1 day') AND NOW()
 ```
-The psql_refresh.sh script is meant to be put in crontab and run on an hourly basis or so.
+The psql_refresh.sql script is meant to be put in crontab and run on an hourly basis or so.
+It can be ran like this for example (every 30 minutes)\
+`*/30 * * * * psql -d sensordb -f /opt/dht11-flask-app/psql_refresh.sql`
 
 ## TODO
 - [X] Add SQL-queries for averages
