@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install postgresql
+sudo apt install postgresql
 su - postgres
 createuser pi -P --interactive
 psql -c 'CREATE DATABASE pi;'

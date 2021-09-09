@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import psycopg2
 import db.sensordb 
-import re
 
 
 app = Flask(__name__)
